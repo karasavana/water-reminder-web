@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💧 Drink Water Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="water-icon.png" type="image/png"> </head>
+<body>
+    <div class="container">
+        <h1>💧 Drink Water Reminder</h1>
+        <p>Stay hydrated for better health and focus!</p>
+
+        <div class="settings">
+            <label for="reminderInterval">Remind me every:</label>
+            <input type="number" id="reminderInterval" min="1" value="60">
+            <span>minutes</span>
+        </div>
+
+        <div class="controls">
+            <button id="startButton">Start Reminders</button>
+            <button id="stopButton" disabled>Stop Reminders</button>
+        </div>
+
+        <div class="status-message" id="statusMessage"></div>
+
+        <div class="info-section">
+            <h2>How it works:</h2>
+            <ul>
+                <li>Enter the number of minutes for your reminder interval.</li>
+                <li>Click "Start Reminders" to activate.</li>
+                <li>You'll receive browser notifications and a sound alert (if enabled) when it's time to drink.</li>
+                <li>Make sure to grant notification permission when prompted!</li>
+            </ul>
+            <p class="credit">Inspired by healthy habits. Built with HTML, CSS, JS.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
